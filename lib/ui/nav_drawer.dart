@@ -1,0 +1,40 @@
+import 'package:flutter/material.dart';
+import 'package:flutteranimations/ui/rotation.dart';
+import 'package:flutteranimations/ui/nav_drawer_item.dart';
+import 'package:flutteranimations/ui/scale_and_translation.dart';
+import 'package:flutteranimations/ui/loading.dart';
+
+class NavDrawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child:
+          Container(
+            color: Colors.blue,
+            child: Padding(
+              padding: EdgeInsets.only(top: 30),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  NavigationDrawerItem(
+                    context: context,
+                    title: 'Rotation',
+                    routeName: Rotation.routeName,
+                  ),
+                  NavigationDrawerItem(
+                    context: context,
+                    title: 'Scale and translation',
+                    routeName: Scale.routeName,
+                  ),
+                  NavigationDrawerItem(
+                    context: context,
+                    title: 'Loading',
+                    routeName: Loading.routeName,
+                  ),
+                ],
+              ),
+            ),
+          )
+    );
+  }
+}
