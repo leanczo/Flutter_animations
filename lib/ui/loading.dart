@@ -1,7 +1,5 @@
-import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:animator/animator.dart';
 import 'package:flutteranimations/ui/nav_drawer.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
