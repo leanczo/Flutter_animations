@@ -36,7 +36,6 @@ class _ScaleState extends State<Scale> {
                 ),
               ],
             )
-
         ),
       ),
     );
