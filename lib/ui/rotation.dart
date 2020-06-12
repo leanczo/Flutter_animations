@@ -3,6 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:animator/animator.dart';
 import 'package:flutteranimations/ui/nav_drawer.dart';
 
+class Constants{
+  static const String Settings = "Settings";
+  static const String Suscribe = "Suscribe";
+  static const String SignOut = "SignOut";
+
+  static const List<String> choices = <String>[
+    Settings,
+    Suscribe,
+    SignOut
+  ];
+}
+
 class Rotation extends StatefulWidget {
   Rotation({Key key, this.title}) : super(key: key);
   static const routeName = '/';
@@ -19,6 +31,19 @@ class _RotationState extends State<Rotation> {
       drawer: NavDrawer(),
       appBar: AppBar(
         title: Text(widget.title),
+        actions: <Widget>[
+          PopupMenuButton<String>(
+            onSelected: choiceAction,
+            itemBuilder: (BuildContext context) {
+              return Constants.choices.map((String choice) {
+                return PopupMenuItem<String>(
+                  value: choice,
+                  child: Text(choice),
+                );
+              }).toList();
+            },
+          )
+        ]
       ),
       body: SafeArea(
         child: Padding(
@@ -268,4 +293,8 @@ _offset(){
     ],
   )
   );
+}
+
+void choiceAction(String choice){
+  print('this work');
 }
