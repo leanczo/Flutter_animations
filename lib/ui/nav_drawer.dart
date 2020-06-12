@@ -4,6 +4,7 @@ import 'package:flutteranimations/ui/nav_drawer_item.dart';
 import 'package:flutteranimations/ui/scale_and_translation.dart';
 import 'package:flutteranimations/ui/loading.dart';
 import 'package:flutteranimations/ui/text.dart';
+import 'package:flutteranimations/ui/bubbles.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -36,6 +37,11 @@ class NavDrawer extends StatelessWidget {
                     context: context,
                     title: 'Text',
                     routeName: TextPage.routeName,
+                  ),
+                  NavigationDrawerItem(
+                    context: context,
+                    title: 'Bubbles',
+                    routeName: Bubbles.routeName,
                   ),
                 ],
               ),
