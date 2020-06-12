@@ -5,6 +5,7 @@ import 'package:flutteranimations/ui/loading.dart';
 import 'package:flutteranimations/ui/text.dart';
 import 'package:flutteranimations/ui/bubbles.dart';
 import 'package:flutteranimations/ui/lists.dart';
+import 'package:flutteranimations/ui/Tabs.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           TextPage.routeName: (context) => TextPage(title: "Text"),
           Bubbles.routeName: (context) => Bubbles(),
           ListPage.routeName: (context) => ListPage(title: "List"),
+          TabsPage.routeName: (context) => TabsPage(title: "Tabs"),
         }
     );
   }

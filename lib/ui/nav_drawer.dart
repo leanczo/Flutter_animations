@@ -6,6 +6,7 @@ import 'package:flutteranimations/ui/loading.dart';
 import 'package:flutteranimations/ui/text.dart';
 import 'package:flutteranimations/ui/bubbles.dart';
 import 'package:flutteranimations/ui/lists.dart';
+import 'package:flutteranimations/ui/Tabs.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -48,6 +49,11 @@ class NavDrawer extends StatelessWidget {
                     context: context,
                     title: 'List',
                     routeName: ListPage.routeName,
+                  ),
+                  NavigationDrawerItem(
+                    context: context,
+                    title: 'Tabs',
+                    routeName: TabsPage.routeName,
                   ),
                 ],
               ),
