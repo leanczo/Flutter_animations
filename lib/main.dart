@@ -4,6 +4,7 @@ import 'package:flutteranimations/ui/scale_and_translation.dart';
 import 'package:flutteranimations/ui/loading.dart';
 import 'package:flutteranimations/ui/text.dart';
 import 'package:flutteranimations/ui/bubbles.dart';
+import 'package:flutteranimations/ui/lists.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
           Loading.routeName: (context) => Loading(title: "Loading"),
           TextPage.routeName: (context) => TextPage(title: "Text"),
           Bubbles.routeName: (context) => Bubbles(),
+          ListPage.routeName: (context) => ListPage(title: "List"),
         }
     );
   }
